@@ -16,11 +16,12 @@ Question 5: What status code is returned for http://google.com? What URL must yo
 
 Question 6: What status code is returned for http://google.com/teapot? Is it the one returned by curl -i or curl -iL? What happens when you curl http://www.google.com/teapot?
 	Using curl -i, status code 301 is displayed.
-	Using curl -iL, status code 301 is displayed, then it a new request is done on the new site, and the status code 418 is displayed.
+	Using curl -iL, status code 301 is displayed, then a new request is done on the new site, and the status code 418 is displayed.
 	When curl -i http://www.google.com/teapot, status code 418 is displayed
 	
 Question 7: What changed in the output of https://webdocs.cs.ualberta.ca/~hindle1/1.py when you used -X POST? What is this method useful for?
-	when I send the POST request to the server with data "X=Y", the server receives my input, and it runs the program with this input and responded me with a report in html format. The output is difference from GET, where the server reponded me with a report of the program running without any input. 
+	when I send the POST request to the server with data "X=Y", the server receives my input, and it runs the program with this input and responded me with a report in html format. The output is difference from GET, where the server reponded me with a report of the program running without any input (Form Contents:
+No form fields.).
 	I can imigine this method being useful when there is an application running on a web server, and clients are able to provide input to the application via POST request and get the result from the web server, without the application running on client's local computer.
 	
 Question 8: What is the raw URL to your python script on GitHub?
